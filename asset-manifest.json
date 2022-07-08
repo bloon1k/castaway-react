@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/castaway-react/static/css/main.0c971aa9.css",
+    "main.js": "/castaway-react/static/js/main.ac5e0e27.js",
+    "index.html": "/castaway-react/index.html",
+    "main.0c971aa9.css.map": "/castaway-react/static/css/main.0c971aa9.css.map",
+    "main.ac5e0e27.js.map": "/castaway-react/static/js/main.ac5e0e27.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0c971aa9.css",
+    "static/js/main.ac5e0e27.js"
+  ]
+}
