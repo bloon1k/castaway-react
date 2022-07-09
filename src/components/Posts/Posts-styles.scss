@@ -1,0 +1,23 @@
+@use '../../styles/colors';
+
+.posts {
+  background: colors.$primary;
+  width: 100%;
+  height: 1000px;
+  box-shadow: 0 0 20px 6px black;
+  color: colors.$white;
+}
+
+// Adaptive media queries
+@media screen and (min-width: 1440px) {
+  .posts {
+    width: 1440px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+
+}
+@media screen and (max-width: 480px) {
+
+}
