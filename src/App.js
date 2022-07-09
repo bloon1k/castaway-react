@@ -1,14 +1,14 @@
 import React from 'react';
 import './styles/App.scss';
-import Nav from "./components/nav/Nav";
+import Head from "./components/nav/Head";
 import Hero from "./components/hero/Hero";
 
 function App() {
 
   return (
-    <div className="App">
+    <div className="App" onResize={() => console.log('resize')}>
         <div className="container">
-            <Nav/>
+            <Head/>
             <Hero/>
         </div>
     </div>

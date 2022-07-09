@@ -11,7 +11,7 @@ const Hero = () => {
     return (
         <section className={'hero'}>
             <div className="hero__image-wrapper">
-                {/*<img src={sparks} alt="sparks" className={'hero__image-sparks'}/>*/}
+                <img src={sparks} alt="sparks" className={'hero__image-sparks'}/>
                 <img src={require('../../Assets/person.png')} alt="broadcaster" className={'hero__image'}/>
             </div>
             <div className="hero__content">
@@ -28,7 +28,7 @@ const Hero = () => {
                         <div className="hero__text-wrapper">
                             <p className="hero__text">Listen on</p>
                             <div className="hero__placeholder">
-
+                                {/*  Placeholder  */}
                             </div>
                         </div>
                         <div className="hero__icons-wrapper">
@@ -40,12 +40,12 @@ const Hero = () => {
                                 <li><img src={radio} alt="radio"/></li>
                             </ul>
                             <div className="hero__placeholder">
-
+                                {/*  Placeholder  */}
                             </div>
                         </div>
                     </div>
                     <div className="hero__placeholder">
-
+                        {/*  Placeholder  */}
                     </div>
                 </div>
             </div>
