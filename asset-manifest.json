@@ -1,7 +1,8 @@
 {
   "files": {
-    "main.css": "/castaway-react/static/css/main.28bf0fec.css",
-    "main.js": "/castaway-react/static/js/main.f5ec3506.js",
+    "main.css": "/castaway-react/static/css/main.771937b5.css",
+    "main.js": "/castaway-react/static/js/main.a7c23a91.js",
+    "static/media/bg.png": "/castaway-react/static/media/bg.89f44bdf6ad61286c580.png",
     "static/media/person.png": "/castaway-react/static/media/person.d4f0df6cab0fe77b6f1d.png",
     "static/media/cross.png": "/castaway-react/static/media/cross.fa0122e3b50c446c1956.png",
     "static/media/logo.svg": "/castaway-react/static/media/logo.b55a5b5802521ca4f20469b440e0ff18.svg",
@@ -12,11 +13,12 @@
     "static/media/spotify.svg": "/castaway-react/static/media/spotify.cc0aab568a402dcc267d5156b470ba2d.svg",
     "static/media/circle.svg": "/castaway-react/static/media/circle.d8950ce36fbc211f155759015b15639f.svg",
     "index.html": "/castaway-react/index.html",
-    "main.28bf0fec.css.map": "/castaway-react/static/css/main.28bf0fec.css.map",
-    "main.f5ec3506.js.map": "/castaway-react/static/js/main.f5ec3506.js.map"
+    "static/media/underline.svg": "/castaway-react/static/media/underline.1ae450ec0fe81ef83b2e6b6dfcfbe2ab.svg",
+    "main.771937b5.css.map": "/castaway-react/static/css/main.771937b5.css.map",
+    "main.a7c23a91.js.map": "/castaway-react/static/js/main.a7c23a91.js.map"
   },
   "entrypoints": [
-    "static/css/main.28bf0fec.css",
-    "static/js/main.f5ec3506.js"
+    "static/css/main.771937b5.css",
+    "static/js/main.a7c23a91.js"
   ]
 }
