@@ -8,6 +8,7 @@
   justify-content: space-between;
   align-items: center;
   margin: 25px 0;
+  box-shadow: 2px 2px 10px black;
 
   &__logo {
     width: 11%;
@@ -35,6 +36,8 @@
   }
 }
 
+
+// Adaptive media queries
 @media screen and (min-width: 1440px) {
   .head {
     width: 1440px;

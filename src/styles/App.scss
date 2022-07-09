@@ -7,7 +7,7 @@
 
 body {
     font-family: 'DM Sans', 'sans-serif';
-    background: colors.$black;
+    background: colors.$primary;
     margin: 0;
     padding: 0;
 }
@@ -22,5 +22,6 @@ a {
 
 .container {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
