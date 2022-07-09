@@ -1,5 +1,5 @@
 import React from 'react';
-import './Nav-styles.scss'
+import './Head-styles.scss'
 import './Burger-menu-styles.scss'
 import logo from '../../Assets/logo.svg'
 

@@ -6,6 +6,7 @@ import soundcloud from '../../Assets/soundcloud.svg';
 import podcasts from '../../Assets/podcasts.svg';
 import radio from '../../Assets/radio.svg';
 import sparks from '../../Assets/sparks.svg'
+import underline from '../../Assets/underline.svg'
 
 const Hero = () => {
     return (
@@ -21,6 +22,7 @@ const Hero = () => {
                         podcast to the <br/>
                         next
                     </span>
+                    <img src={underline} alt="underline" className={'hero__title-line'}/>
                     <strong> level</strong>
                 </h2>
                 <div className="hero__music-wrapper">
