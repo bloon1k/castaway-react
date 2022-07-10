@@ -10,6 +10,9 @@ const Posts = () => {
                     Suggest a post
                 </button>
             </div>
+            <div className="posts__content">
+                2132
+            </div>
         </section>
     );
 };
