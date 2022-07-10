@@ -31,20 +31,36 @@ const Head = () => {
                         {/*  Placeholder  */}
                     </div>
                     <ul className="head__menu-ul">
-                        <a href={'#root'}><li>Home</li></a>
-                        <a href={'#root'}><li>Episodes</li></a>
-                        <a href={'#root'}><li>About</li></a>
-                        <a href={'#root'}><li>Contact</li></a>
+                        <a href={'#root'}>
+                            <li>Home</li>
+                        </a>
+                        <a href={'#root'}>
+                            <li>Episodes</li>
+                        </a>
+                        <a href={'#root'}>
+                            <li>About</li>
+                        </a>
+                        <a href={'#root'}>
+                            <li>Contact</li>
+                        </a>
                     </ul>
                 </div>
             </div>
             <img src={logo} alt="Castaway Logo" className={'head__logo'}/>
             <nav className="head__nav">
                 <ul className="head__ul">
-                    <a href={'#root'}><li>Home</li></a>
-                    <a href={'#root'}><li>Episodes</li></a>
-                    <a href={'#root'}><li>About</li></a>
-                    <a href={'#root'}><li>Contact</li></a>
+                    <a href={'#root'}>
+                        <li>Home</li>
+                    </a>
+                    <a href={'#root'}>
+                        <li>Episodes</li>
+                    </a>
+                    <a href={'#root'}>
+                        <li>About</li>
+                    </a>
+                    <a href={'#root'}>
+                        <li>Contact</li>
+                    </a>
                 </ul>
             </nav>
             <img
