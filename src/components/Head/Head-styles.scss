@@ -54,7 +54,27 @@
   }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1200px) {
+  .head {
+
+    &__logo {
+      width: 15%;
+      margin: 0 3.5%;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .head {
+
+    &__logo {
+      width: 18%;
+      margin: 0 3.5%;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
   .head {
 
     &__logo {
