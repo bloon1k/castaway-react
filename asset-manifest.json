@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/castaway-react/static/css/main.5a9d5979.css",
+    "main.css": "/castaway-react/static/css/main.27906537.css",
     "main.js": "/castaway-react/static/js/main.805cd8d1.js",
     "static/media/bg.png": "/castaway-react/static/media/bg.89f44bdf6ad61286c580.png",
     "static/media/person.png": "/castaway-react/static/media/person.d4f0df6cab0fe77b6f1d.png",
@@ -17,11 +17,11 @@
     "static/media/circle.svg": "/castaway-react/static/media/circle.d8950ce36fbc211f155759015b15639f.svg",
     "index.html": "/castaway-react/index.html",
     "static/media/underline.svg": "/castaway-react/static/media/underline.1ae450ec0fe81ef83b2e6b6dfcfbe2ab.svg",
-    "main.5a9d5979.css.map": "/castaway-react/static/css/main.5a9d5979.css.map",
+    "main.27906537.css.map": "/castaway-react/static/css/main.27906537.css.map",
     "main.805cd8d1.js.map": "/castaway-react/static/js/main.805cd8d1.js.map"
   },
   "entrypoints": [
-    "static/css/main.5a9d5979.css",
+    "static/css/main.27906537.css",
     "static/js/main.805cd8d1.js"
   ]
 }
