@@ -4,9 +4,7 @@
   background: colors.$primary;
   display: flex;
   flex-direction: column;
-  align-items: center;
   width: 92%;
-  height: 1000px;
   box-shadow: 0 0 20px 6px black;
   color: colors.$white;
   padding: 0 5%;
@@ -22,22 +20,22 @@
       font-weight: 400;
       font-size: 300%;
     }
+  }
 
-    & > button {
-      font-weight: 700;
-      font-size: 100%;
-      width: 15%;
-      height: 45%;
-      color: colors.$white;
-      background: colors.$secondary;
-      border: 3px solid colors.$secondary;
-      border-radius: 5px;
-      transition: .2s all;
+  &__button-suggest {
+    width: 15%;
+    height: 45%;
 
-      &:hover {
-        background: colors.$primary;
-      }
+    &:hover {
+      background: colors.$primary !important;
     }
+  }
+
+  &__content {
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
   }
 }
 
@@ -53,20 +51,19 @@
 
     &__header {
 
-      height: 100px;
-
       & > h2 {
         font-size: 200%;
       }
+    }
 
-      & > button {
-        font-size: 80%;
-      }
+    &__button-suggest {
+      font-size: 80%;
+      height: 40%;
     }
   }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1024px) {
   .posts {
 
     &__header {
@@ -74,30 +71,32 @@
       & > h2 {
         font-size: 150%;
       }
+    }
 
-      & > button {
-        font-size: 70%;
-        height: 40%;
-        width: 20%;
-      }
+    &__button-suggest {
+      font-size: 80%;
+      height: 35%;
+      width: 18%;
     }
   }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 768px) {
   .posts {
 
     &__header {
 
+      height: 100px;
+
       & > h2 {
         font-size: 150%;
       }
+    }
 
-      & > button {
-        font-size: 70%;
-        height: 40%;
-        width: 25%;
-      }
+    &__button-suggest {
+      font-size: 65%;
+      height: 40%;
+      width: 24%;
     }
   }
 }
@@ -105,15 +104,14 @@
 @media screen and (max-width: 480px) {
   .posts {
 
-    &__header {
+    &__content {
+      gap: 1em;
+    }
 
-      height: 70px;
-
-      & > button {
-        font-size: 60%;
-        height: 50%;
-        width: 34%;
-      }
+    &__button-suggest {
+      font-size: 60%;
+      height: 40%;
+      width: 34%;
     }
   }
 }
