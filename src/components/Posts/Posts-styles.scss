@@ -103,6 +103,11 @@
 
 @media screen and (max-width: 480px) {
   .posts {
+    padding: 0 1%;
+
+    &__header {
+      padding: 4%;
+    }
 
     &__content {
       gap: 1em;
@@ -111,7 +116,7 @@
     &__button-suggest {
       font-size: 60%;
       height: 40%;
-      width: 34%;
+      width: 33%;
     }
   }
 }
