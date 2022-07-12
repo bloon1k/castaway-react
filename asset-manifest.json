@@ -1,10 +1,13 @@
 {
   "files": {
-    "main.css": "/castaway-react/static/css/main.771937b5.css",
-    "main.js": "/castaway-react/static/js/main.a7c23a91.js",
+    "main.css": "/castaway-react/static/css/main.5a9d5979.css",
+    "main.js": "/castaway-react/static/js/main.805cd8d1.js",
     "static/media/bg.png": "/castaway-react/static/media/bg.89f44bdf6ad61286c580.png",
     "static/media/person.png": "/castaway-react/static/media/person.d4f0df6cab0fe77b6f1d.png",
     "static/media/cross.png": "/castaway-react/static/media/cross.fa0122e3b50c446c1956.png",
+    "static/media/p1.png": "/castaway-react/static/media/p1.7879de8bfb823abe40f7.png",
+    "static/media/p3.png": "/castaway-react/static/media/p3.e038ad6684c1043b50b5.png",
+    "static/media/p2.png": "/castaway-react/static/media/p2.cf1aa70cdba6d552abcb.png",
     "static/media/logo.svg": "/castaway-react/static/media/logo.b55a5b5802521ca4f20469b440e0ff18.svg",
     "static/media/soundcloud.svg": "/castaway-react/static/media/soundcloud.7e472a936928dfb8bf6690278b4d0c15.svg",
     "static/media/podcasts.svg": "/castaway-react/static/media/podcasts.09ff3237fb2488b6eb374913a1fb6750.svg",
@@ -14,11 +17,11 @@
     "static/media/circle.svg": "/castaway-react/static/media/circle.d8950ce36fbc211f155759015b15639f.svg",
     "index.html": "/castaway-react/index.html",
     "static/media/underline.svg": "/castaway-react/static/media/underline.1ae450ec0fe81ef83b2e6b6dfcfbe2ab.svg",
-    "main.771937b5.css.map": "/castaway-react/static/css/main.771937b5.css.map",
-    "main.a7c23a91.js.map": "/castaway-react/static/js/main.a7c23a91.js.map"
+    "main.5a9d5979.css.map": "/castaway-react/static/css/main.5a9d5979.css.map",
+    "main.805cd8d1.js.map": "/castaway-react/static/js/main.805cd8d1.js.map"
   },
   "entrypoints": [
-    "static/css/main.771937b5.css",
-    "static/js/main.a7c23a91.js"
+    "static/css/main.5a9d5979.css",
+    "static/js/main.805cd8d1.js"
   ]
 }
