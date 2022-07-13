@@ -3,7 +3,7 @@ import './styles/App.scss';
 import Head from "./components/Head/Head";
 import Hero from "./components/Hero/Hero";
 import Posts from "./components/Posts/Posts";
-// import Bio from "./components/Bio/Bio";
+import Bio from "./components/Bio/Bio";
 // import axios from "axios";
 
 
@@ -32,7 +32,8 @@ function App() {
                 <Head/>
                 <Hero/>
                 <Posts/>
-                {/*<Bio/>*/}
+                <Bio/>
+                
                 <br/>
                 <br/>
                 <br/>

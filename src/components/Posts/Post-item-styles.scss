@@ -4,7 +4,6 @@
   display: flex;
   gap: 2%;
   width: 100%;
-  height: 450px;
   background: colors.$black;
   border-radius: 1em;
   padding: 2.5%;
@@ -20,11 +19,14 @@
 
   &__image {
     width: 100%;
-    height: 100%;
+    max-height: 100%;
     opacity: 0.6;
     transition: .2s all;
 
     &-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       width: 30%;
     }
   }
@@ -41,7 +43,7 @@
   }
 
   &__title {
-    font-size: 250%;
+    font-size: 220%;
     font-weight: 400;
     letter-spacing: .1em;
 
@@ -62,14 +64,16 @@
 
   &__button {
     width: 24%;
-    height: 12%;
+    min-height: 12%;
     font-weight: 400;
   }
 }
 
 // Adaptive media queries
 @media screen and (min-width: 1440px) {
-
+  .post-item {
+    height: 450px;
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -100,14 +104,14 @@
 
 @media screen and (max-width: 1024px) {
   .post-item {
-    height: 400px;
+    height: 330px;
 
     &__content {
 
     }
 
     &__number {
-      font-size: 60%;
+      display: none;
     }
 
     &__title {
@@ -120,6 +124,7 @@
 
     &__button {
       font-size: 80%;
+      height: 12%;
     }
   }
 }
@@ -162,11 +167,11 @@
     }
 
     &__title {
-      font-size: 160%;
+      font-size: 170%;
     }
 
     &__body {
-      font-size: 80%;
+      font-size: 100%;
     }
 
     &__button {
@@ -206,11 +211,11 @@
     }
 
     &__title {
-      font-size: 120%;
+      font-size: 130%;
     }
 
     &__body {
-      font-size: 60%;
+      font-size: 80%;
     }
 
     &__button {

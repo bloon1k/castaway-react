@@ -3,7 +3,7 @@ import './Posts-styles.scss'
 import axios from "axios"
 import {v4 as uuid} from 'uuid'
 import PostItem from './Post-item'
-import Button from "../UI/Button/Button";
+import MyButton from "../UI/Button/MyButton";
 
 
 const Posts = () => {
@@ -25,7 +25,7 @@ const Posts = () => {
         <section className={'posts'}>
             <div className="posts__header">
                 <h2>Latest posts</h2>
-                <Button props={{className: 'posts__button-suggest'}} text={'Suggest a post'}/>
+                <MyButton props={{className: 'posts__button-suggest'}} text={'Suggest a post'}/>
             </div>
             <div className="posts__content">
                 {posts.map(post => {
