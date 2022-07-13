@@ -16,7 +16,7 @@ const Hero = () => {
                 <img src={require('../../Assets/person.png')} alt="broadcaster" className={'hero__image'}/>
             </div>
             <div className="hero__content">
-                <h2 className={'hero__title'}>
+                <h1 className={'hero__title'}>
                     <span>
                         Take your <br/>
                         podcast to the <br/>
@@ -24,7 +24,7 @@ const Hero = () => {
                     </span>
                     <img src={underline} alt="underline" className={'hero__title-line'}/>
                     <strong> level</strong>
-                </h2>
+                </h1>
                 <div className="hero__music-wrapper">
                     <div className="hero__music">
                         <div className="hero__text-wrapper">

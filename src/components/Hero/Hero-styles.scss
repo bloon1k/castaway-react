@@ -3,11 +3,10 @@
 .hero {
   background: colors.$primary;
   width: 92%;
-  margin: 80px 0 10px 0;
+  margin: 70px 0 0 0;
   display: flex;
   gap: 1%;
   color: colors.$white;
-  box-shadow: 0 0 20px 5px black;
 
   // Left side
   &__image-wrapper {
@@ -129,23 +128,70 @@
 
 @media screen and (max-width: 768px) {
   .hero {
+    padding: 5%;
+    flex-direction: column;
+    width: 92%;
+
+    &__image {
+      width: 100%;
+
+      &-wrapper {
+        width: 100%;
+        margin: 0;
+      }
+    }
+
+
+    &__content {
+      width: 100%;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
 
     &__image-sparks {
-      width: 34px;
-      height: 37px;
+      width: 68px;
+      height: 74px;
     }
 
-    &__music-wrapper {
-      width: 60%;
+    &__music {
+
+      &-wrapper {
+        align-items: center;
+        justify-content: center;
+      }
     }
+
+    &__icons {
+      gap: 10px;
+    }
+
 
     &__title {
+      font-size: 280%;
+      text-align: center;
+
+      &-line {
+        width: 32%;
+        position: absolute;
+        top: 63%;
+        left: 14%;
+      }
+    }
+
+    &__text {
       font-size: 150%;
+
+      &-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
     }
 
     &__icons > li > img {
-      width: 15px;
-      height: 15px;
+      width: 35px;
+      height: 35px;
     }
   }
 }
@@ -154,16 +200,16 @@
   .hero {
 
     &__title {
-      font-size: 100%;
+      font-size: 190%;
     }
 
     &__text {
-      font-size: 60%;
+      font-size: 90%;
     }
 
     &__icons > li > img {
-      width: 10px;
-      height: 10px;
+      width: 30px;
+      height: 30px;
     }
   }
 }
