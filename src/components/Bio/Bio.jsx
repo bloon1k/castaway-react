@@ -1,19 +1,24 @@
 import React from 'react'
 import './Bio-styles.scss'
+import Button from "../UI/Button/Button";
 
 const Bio = () => {
     return (
         <section className={'bio'}>
             <div className="bio__content">
-                <button className="bio__button">
-                    <div className="bio__placeholder">
-                        {/*  Placeholder  */}
-                    </div>
-                    <span className="bio__placeholder">
-                        Visit Jacob website
-                    </span>
-                    <img src={require('../../Assets/arrow.png')} alt="arrow"/>
-                </button>
+                <Button props={{className: 'bio__button'}} text={
+                    // 'text' = Children of the button
+                    <>
+                        <div className="bio__placeholder">
+                            {/*  Placeholder  */}
+                        </div>
+                        <span className="bio__placeholder">
+                            Visit Jacob's website
+                        </span>
+                        <img src={require('../../Assets/arrow.png')} alt="arrow"/>
+                    </>
+                    // End of children
+                }/>
                 <p>Meet your host</p>
                 <h2>Jacob Paulaner</h2>
                 <div className="bio__text">

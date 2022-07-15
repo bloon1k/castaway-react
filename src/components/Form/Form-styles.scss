@@ -1,0 +1,213 @@
+@use '../../styles/colors';
+
+.form {
+  width: 92%;
+  //height: 400px;
+  padding: 0 5%;
+  background: colors.$primary;
+  color: colors.$white;
+
+  &__container {
+    display: flex;
+    padding: 3% 5%;
+    width: 100%;
+    background: colors.$black;
+    border-radius: 1em;
+  }
+
+  // Left side
+  &__text {
+    color: colors.$secondary;
+    font-size: 80%;
+  }
+
+  &__title {
+    font-size: 280%;
+    font-weight: 400;
+    letter-spacing: .1em;
+    margin: 0;
+
+    &-wrapper {
+      width: 50%;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__sparks {
+    position: absolute;
+    top: 96%;
+    left: -13%;
+    width: 22%;
+  }
+
+  // Right side (Form)
+  &__inputs {
+    padding: 0 5%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.7em;
+  }
+
+  #form__name, #form__email {
+    padding: 0 3%;
+    width: 100%;
+    height: 50px;
+
+    &:focus-visible {
+      outline: none;
+    }
+  }
+
+  &__input-wrapper {
+    position: relative;
+  }
+
+  &__error {
+    font-size: 80%;
+    color: #a81111;
+    position: absolute;
+    top: 85%;
+    left: 2%;
+  }
+
+  &__button {
+    width: 25%;
+    height: 42px;
+  }
+}
+
+
+// Adaptive media queries
+@media screen and (min-width: 1440px) {
+  .form {
+    width: 1440px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .form {
+
+    &__button {
+      font-size: 80%;
+      width: 30%;
+      height: 40px;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .form {
+
+    &__text {
+      font-size: 70%;
+    }
+
+    &__title {
+      font-size: 220%;
+    }
+
+    #form__name, #form__email {
+      height: 40px;
+    }
+
+    &__error {
+      font-size: 65%;
+    }
+
+    &__button {
+      font-size: 70%;
+      width: 35%;
+      height: 30px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .form {
+
+    &__container {
+      flex-direction: column;
+      align-items: center;
+      gap: 4em;
+    }
+
+    &__sparks {
+      top: 90%;
+      left: 9%;
+      width: 21%;
+    }
+
+    &__text {
+      text-align: center;
+      font-size: 100%;
+    }
+
+    &__title {
+      text-align: center;
+      font-size: 200%;
+
+      &-wrapper {
+        width: 70%;
+      }
+    }
+
+    &__inputs {
+      width: 90%;
+    }
+
+    #form__name, #form__email {
+      height: 50px;
+    }
+
+    &__button {
+      height: 45px;
+      font-size: 90%;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .form {
+
+    &__container {
+      flex-direction: column;
+      align-items: center;
+      gap: 4em;
+    }
+
+    &__sparks {
+      display: none;
+    }
+
+    &__text {
+      text-align: center;
+      font-size: 80%;
+    }
+
+    &__title {
+      text-align: center;
+      font-size: 150%;
+
+      &-wrapper {
+        width: 70%;
+      }
+    }
+
+    &__inputs {
+      width: 100%;
+    }
+
+    #form__name, #form__email {
+      height: 48px;
+    }
+
+    &__button {
+      width: 40%;
+      height: 40px;
+      font-size: 80%;
+    }
+  }
+}
