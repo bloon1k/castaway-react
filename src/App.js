@@ -4,6 +4,7 @@ import Head from "./components/Head/Head";
 import Hero from "./components/Hero/Hero";
 import Posts from "./components/Posts/Posts";
 import Bio from "./components/Bio/Bio";
+import Form from "./components/Form/Form";
 // import axios from "axios";
 
 
@@ -33,38 +34,10 @@ function App() {
                 <Hero/>
                 <Posts/>
                 <Bio/>
-                
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
+                <Form/>
+                <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
             </div>
         </div>
     );

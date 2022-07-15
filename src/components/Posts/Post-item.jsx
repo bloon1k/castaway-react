@@ -1,6 +1,6 @@
 import React from 'react'
 import './Post-item-styles.scss'
-import MyButton from "../UI/Button/MyButton";
+import Button from "../UI/Button/Button";
 
 const PostItem = ({props}) => {
     return (
@@ -19,7 +19,7 @@ const PostItem = ({props}) => {
                 <p className="post-item__body">
                     {props.body}
                 </p>
-                <MyButton props={{className: 'post-item__button'}} text={'View post details'}/>
+                <Button props={{className: 'post-item__button'}} text={'View post details'}/>
             </div>
         </div>
     );

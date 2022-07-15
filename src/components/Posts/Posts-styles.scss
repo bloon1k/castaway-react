@@ -73,7 +73,7 @@
     }
 
     &__button-suggest {
-      font-size: 80%;
+      font-size: 80% !important;
       height: 35%;
       width: 18%;
     }
@@ -93,7 +93,7 @@
     }
 
     &__button-suggest {
-      font-size: 65%;
+      font-size: 65% !important;
       height: 40%;
       width: 24%;
     }
@@ -113,9 +113,9 @@
     }
 
     &__button-suggest {
-      font-size: 60%;
+      font-size: 59% !important;
       height: 40%;
-      width: 33%;
+      width: 34%;
     }
   }
 }

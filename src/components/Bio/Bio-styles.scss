@@ -85,6 +85,22 @@
 
 @media screen and (max-width: 1200px) {
   .bio {
+
+    &__content {
+      & > h2 {
+        font-size: 190%;
+      }
+
+      & > p {
+        font-size: 80%;
+      }
+    }
+
+    &__text {
+      font-size: 90%;
+      line-height: 1.5em;
+    }
+
     &__button {
       width: 90px;
       height: 90px;
