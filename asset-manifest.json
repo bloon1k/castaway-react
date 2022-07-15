@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/castaway-react/static/css/main.e77f00c1.css",
-    "main.js": "/castaway-react/static/js/main.e5d700fa.js",
+    "main.css": "/castaway-react/static/css/main.d1f64ed8.css",
+    "main.js": "/castaway-react/static/js/main.d3f27bab.js",
     "static/media/bg.png": "/castaway-react/static/media/bg.89f44bdf6ad61286c580.png",
     "static/media/jacob.png": "/castaway-react/static/media/jacob.58ec1dbb2a31cb99ec9b.png",
     "static/media/person.png": "/castaway-react/static/media/person.d4f0df6cab0fe77b6f1d.png",
@@ -14,15 +14,16 @@
     "static/media/podcasts.svg": "/castaway-react/static/media/podcasts.09ff3237fb2488b6eb374913a1fb6750.svg",
     "static/media/radio.svg": "/castaway-react/static/media/radio.7bc09577ac3c59bf7191faa89fd54690.svg",
     "static/media/sparks.svg": "/castaway-react/static/media/sparks.ac188ce944d0808b0a64d8efb59cf4b5.svg",
+    "static/media/sparks2.svg": "/castaway-react/static/media/sparks2.c6deabddd886f40f6d588c3b76f9422b.svg",
     "static/media/spotify.svg": "/castaway-react/static/media/spotify.cc0aab568a402dcc267d5156b470ba2d.svg",
     "static/media/circle.svg": "/castaway-react/static/media/circle.d8950ce36fbc211f155759015b15639f.svg",
     "index.html": "/castaway-react/index.html",
     "static/media/underline.svg": "/castaway-react/static/media/underline.1ae450ec0fe81ef83b2e6b6dfcfbe2ab.svg",
-    "main.e77f00c1.css.map": "/castaway-react/static/css/main.e77f00c1.css.map",
-    "main.e5d700fa.js.map": "/castaway-react/static/js/main.e5d700fa.js.map"
+    "main.d1f64ed8.css.map": "/castaway-react/static/css/main.d1f64ed8.css.map",
+    "main.d3f27bab.js.map": "/castaway-react/static/js/main.d3f27bab.js.map"
   },
   "entrypoints": [
-    "static/css/main.e77f00c1.css",
-    "static/js/main.e5d700fa.js"
+    "static/css/main.d1f64ed8.css",
+    "static/js/main.d3f27bab.js"
   ]
 }
