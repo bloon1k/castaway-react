@@ -1,0 +1,25 @@
+@use '../../styles/colors';
+
+.comments {
+  background: colors.$primary;
+  width: 92%;
+  padding: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1em;
+}
+
+// Adaptive media queries
+@media screen and (min-width: 1440px) {
+  .comments {
+    width: 1440px;
+  }
+}
+
+
+@media screen and (max-width: 1024px) {
+  .comments {
+    gap: .7em;
+  }
+}

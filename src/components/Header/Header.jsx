@@ -1,9 +1,9 @@
 import React from 'react';
-import './Head-styles.scss'
+import './Header-styles.scss'
 import './Burger-menu-styles.scss'
 import logo from '../../Assets/logo.svg'
 
-const Head = () => {
+const Header = () => {
 
     function clickHandler() {
         const menu = document.getElementsByClassName('head__menu')[0]
@@ -73,4 +73,4 @@ const Head = () => {
     );
 };
 
-export default Head;
+export default Header;
