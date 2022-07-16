@@ -3,7 +3,7 @@ import styles from './Input.module.scss'
 
 const Input = ({props}) => {
     return (
-        <input type="text" className={styles.input} {...props} {...props.reg}/>
+        <input type="text" className={styles.input} {...props}/>
     );
 };
 

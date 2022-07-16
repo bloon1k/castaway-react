@@ -6,6 +6,8 @@ import Posts from "./components/Posts/Posts";
 import Bio from "./components/Bio/Bio";
 import Form from "./components/Form/Form";
 import Comments from "./components/Comments/Comments";
+import CommentForm from "./components/CommentForm/CommentForm";
+import Footer from "./components/Footer/Footer";
 // import axios from "axios";
 
 
@@ -18,12 +20,6 @@ import Comments from "./components/Comments/Comments";
 //         .then(response => console.log(response))
 //         .catch(error => console.log(error))
 // }
-//
-// async function getData() {
-//     await axios.get('https://jsonplaceholder.typicode.com/todos/201')
-//         .then(response => console.log(response))
-//         .catch(error => console.log(error))
-// }
 
 // 1. Fix form adaptive
 // 2. Form submit action
@@ -33,7 +29,15 @@ import Comments from "./components/Comments/Comments";
 // 6. Burger and regular menu pages create
 // 7. Do something about 1440+ header appearance
 // 8. Edit readme.md
+// 9. Form padding top-bottom so small on phone. Title as well
+// 10. Comments seem too thick on the phone;
+// 11. Burger looks not good, need to steal it somewhere
+// 12. Remove posts hover effect on 768 -.
+// 13. Header.jsx cannot contain A in the UL, need to wrap A with LI
 
+
+// on hover 3 n1, n2, n3 .classList.add('yellow')
+// on out 3 n1, n2, n3 .classList.remove('yellow')
 
 function App() {
 
@@ -46,9 +50,8 @@ function App() {
                 <Bio/>
                 <Form/>
                 <Comments/>
-                <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-                <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-                <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                <CommentForm/>
+                <Footer/>
             </div>
         </div>
     );
