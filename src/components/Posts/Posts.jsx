@@ -19,6 +19,7 @@ const Posts = () => {
         }
 
         getData('https://jsonplaceholder.typicode.com/posts/')
+            .then(() => console.log('request for posts sent'))
     }, [])
 
     return (

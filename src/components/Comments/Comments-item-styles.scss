@@ -1,0 +1,113 @@
+@use '../../styles/colors';
+
+.comments-item {
+  background: colors.$black;
+  color: colors.$white;
+  padding: 3% 2%;
+  width: 30%;
+  border-radius: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2em;
+
+  &__stars {
+    display: flex;
+    align-items: center;
+    gap: .25em;
+
+    & > img {
+      width: 18px;
+      height: 17px;
+    }
+  }
+
+  &__body {
+    font-size: 150%;
+
+    &:first-letter {
+      text-transform: uppercase;
+    }
+  }
+
+  &__email {
+    opacity: 0.7;
+    font-size: 100%;
+    text-transform: lowercase;
+  }
+}
+
+// Adaptive media queries
+@media screen and (max-width: 1200px) {
+  .comments-item {
+
+    &__stars {
+      gap: .20em;
+
+      & > img {
+        width: 16px;
+        height: 15px;
+      }
+    }
+
+    &__body {
+      font-size: 130%;
+    }
+
+    &__email {
+      font-size: 80%;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .comments-item {
+
+    &__stars {
+      gap: .20em;
+
+      & > img {
+        width: 15px;
+        height: 14px;
+      }
+    }
+
+    &__body {
+      font-size: 110%;
+    }
+
+    &__email {
+      font-size: 70%;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .comments-item {
+    width: 48%;
+    padding: 5% 3%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .comments-item {
+    width: 45%;
+
+    &__stars {
+      gap: .20em;
+
+      & > img {
+        width: 14px;
+        height: 13px;
+      }
+    }
+
+    &__body {
+      font-size: 80%;
+    }
+
+    &__email {
+      font-size: 50%;
+    }
+  }
+}
