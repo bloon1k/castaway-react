@@ -5,4 +5,8 @@
   border: 2px solid colors.$primary;
   border-radius: 0.5em;
   color: colors.$white;
+
+  &:focus-visible {
+    outline: none;
+  }
 }

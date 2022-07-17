@@ -1,7 +1,6 @@
 import React from 'react'
 import './Form-styles.scss'
 import Button from "../UI/Button/Button";
-import Input from "../UI/Input/Input";
 import {useForm} from 'react-hook-form';
 import * as yup from 'yup'
 import {yupResolver} from "@hookform/resolvers/yup";
@@ -41,21 +40,25 @@ const Form = () => {
 
                 <form className="form__inputs" onSubmit={handleSubmit(submitForm)}>
                     <div className="form__input-wrapper">
-                        <Input props={{
-                            placeholder: 'Name',
-                            id: 'form__name',
-                            name: 'name',
-                            reg: {...register('name')},
-                        }}/>
+                        <input
+                            type="text"
+                            name="name"
+                            id="form__name"
+                            className={'input'}
+                            placeholder={'Name'}
+                            {...register('name')}
+                        />
                         {errors.name && <p className={'form__error'}>{errors.name.message}</p>}
                     </div>
                     <div className="form__input-wrapper">
-                        <Input props={{
-                            placeholder: 'Email',
-                            id: 'form__email',
-                            name: 'email',
-                            reg: {...register('email')},
-                        }}/>
+                        <input
+                            type="text"
+                            name="email"
+                            id="form__email"
+                            className={'input'}
+                            placeholder={'Email'}
+                            {...register('email')}
+                        />
                         {errors.email && <p className={'form__error'}>{errors.email.message}</p>}
                     </div>
                     <Button props={{className: 'form__button', type: 'submit'}} text={'Submit'}/>

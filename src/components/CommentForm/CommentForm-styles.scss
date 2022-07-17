@@ -9,7 +9,6 @@
   &__wrapper {
     background: colors.$black;
     width: 100%;
-    height: 200px;
     padding: 3%;
     border-radius: 1em;
     display: flex;
@@ -18,6 +17,9 @@
   // Left side
   &__text {
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
 
@@ -34,17 +36,61 @@
   }
 
   // Form
+
   &__inputs {
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6em;
+    position: relative;
+  }
+
+  &__comment, &__email {
+    height: 45px;
+    width: 100%;
+    padding: 0 0 0 2%;
+  }
+
+  &__comment-wrapper, &__email-wrapper {
+    position: relative;
+  }
+
+  &__error {
+    font-size: 80%;
+    color: #a81111;
+    position: absolute;
+    top: 85%;
+    left: 2%;
+  }
+
+  &__error2 {
+    font-size: 80%;
+    color: #a81111;
+    position: absolute;
+    top: 8%;
+    left: 2%;
+  }
+
+  &__submit {
+    height: 45px;
   }
 
   &__star {
-    width: 25px;
-    height: 24px;
+    width: 35px !important;
+    height: 34px !important;
+    transition: .3s all;
+    padding: 0 5px;
   }
+}
 
-  &__star3:hover ~ &__star5 {
-    width: 100px;
+.input {
+  background: colors.$primary;
+  border: 2px solid colors.$primary;
+  border-radius: 0.5em;
+  color: colors.$white;
+
+  &:focus-visible {
+    outline: none;
   }
 }
 
