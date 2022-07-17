@@ -8,8 +8,6 @@ import Form from "./components/Form/Form";
 import Comments from "./components/Comments/Comments";
 import CommentForm from "./components/CommentForm/CommentForm";
 import Footer from "./components/Footer/Footer";
-// import axios from "axios";
-
 
 // async function postData() {
 //     await axios.post('https://jsonplaceholder.typicode.com/todos/', {
@@ -34,10 +32,8 @@ import Footer from "./components/Footer/Footer";
 // 11. Burger looks not good, need to steal it somewhere
 // 12. Remove posts hover effect on 768 -.
 // 13. Header.jsx cannot contain A in the UL, need to wrap A with LI
-
-
-// on hover 3 n1, n2, n3 .classList.add('yellow')
-// on out 3 n1, n2, n3 .classList.remove('yellow')
+// 14. Less gap between comments and upper form
+// 15. align items center on Footer
 
 function App() {
 
