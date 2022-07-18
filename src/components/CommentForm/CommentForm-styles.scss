@@ -22,7 +22,6 @@
     justify-content: center;
   }
 
-
   &__question {
     color: colors.$secondary;
     font-size: 80%;
@@ -35,62 +34,13 @@
     margin: 0;
   }
 
-  // Form
+  // Right side
 
-  &__inputs {
+  &__component-wrapper {
     width: 50%;
     display: flex;
     flex-direction: column;
-    gap: 1.6em;
-    position: relative;
-  }
-
-  &__comment, &__email {
-    height: 45px;
-    width: 100%;
-    padding: 0 0 0 2%;
-  }
-
-  &__comment-wrapper, &__email-wrapper {
-    position: relative;
-  }
-
-  &__error {
-    font-size: 80%;
-    color: #a81111;
-    position: absolute;
-    top: 85%;
-    left: 2%;
-  }
-
-  &__error2 {
-    font-size: 80%;
-    color: #a81111;
-    position: absolute;
-    top: 8%;
-    left: 2%;
-  }
-
-  &__submit {
-    height: 45px;
-  }
-
-  &__star {
-    width: 35px !important;
-    height: 34px !important;
-    transition: .3s all;
-    padding: 0 5px;
-  }
-}
-
-.input {
-  background: colors.$primary;
-  border: 2px solid colors.$primary;
-  border-radius: 0.5em;
-  color: colors.$white;
-
-  &:focus-visible {
-    outline: none;
+    gap: 1em;
   }
 }
 
@@ -110,7 +60,29 @@
 }
 
 @media screen and (max-width: 768px) {
+  .comment-form {
 
+    &__wrapper {
+      flex-direction: column;
+      align-items: center;
+      padding: 5%;
+      gap: 1em;
+    }
+
+    &__text {
+      width: 90%;
+      font-size: 60%;
+      gap: 1em;
+    }
+
+    &__question {
+      font-size: 100%;
+    }
+
+    &__component-wrapper {
+      width: 90%;
+    }
+  }
 }
 
 @media screen and (max-width: 480px) {

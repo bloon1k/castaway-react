@@ -1,0 +1,89 @@
+@use '../../../styles/colors';
+
+.comment-form {
+
+  &__inputs {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6em;
+    position: relative;
+  }
+
+  &__comment, &__email {
+    height: 45px;
+    width: 100%;
+    padding: 0 0 0 2%;
+  }
+
+  &__comment-wrapper, &__email-wrapper {
+    position: relative;
+  }
+
+  &__error {
+    font-size: 80%;
+    color: #a81111;
+    position: absolute;
+    top: 85%;
+    left: 2%;
+  }
+
+  &__error2 {
+    font-size: 80%;
+    color: #a81111;
+    position: absolute;
+    top: -18%;
+    left: 2%;
+  }
+
+  &__submit {
+    height: 45px;
+  }
+}
+
+.input {
+  background: colors.$primary;
+  border: 2px solid colors.$primary;
+  border-radius: 0.5em;
+  color: colors.$white;
+
+  &:focus-visible {
+    outline: none;
+  }
+}
+
+// Adaptive media queries
+@media screen and (min-width: 1440px) {
+  .comment-form {
+
+  }
+}
+
+@media screen and (max-width: 1200px) {
+
+}
+
+@media screen and (max-width: 1024px) {
+  .comment-form {
+    &__submit {
+      font-size: 90%;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .comment-form {
+
+    &__comment, &__email {
+      height: 40px;
+    }
+
+    &__submit {
+      height: 40px;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+}
