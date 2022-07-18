@@ -1,6 +1,6 @@
-import middleStar from "../../Assets/middleStar.svg";
-import grayStar from "../../Assets/star-gray.svg";
-import star from "../../Assets/star.svg";
+import middleStar from "../../../Assets/middleStar.svg";
+import grayStar from "../../../Assets/star-gray.svg";
+import star from "../../../Assets/star.svg";
 
 export function hoverHandler(e) {
     // Defining stars for set rating for the new comment
@@ -80,7 +80,7 @@ export function hoverOutHandler() {
     star5.setAttribute('src', grayStar)
 }
 
-export function clickHandler(e, setStarValue) {
+export function clickHandler(e) {
     // Defining stars for set rating for the new comment
     const star1 = document.getElementById('star1')
     const star2 = document.getElementById('star2')

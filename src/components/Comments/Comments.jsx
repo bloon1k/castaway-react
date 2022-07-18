@@ -1,12 +1,14 @@
-import React, {useEffect, useState} from 'react'
+import React, {useEffect, useContext} from 'react'
 import axios from 'axios'
 import {v4 as uuid} from 'uuid'
 import CommentsItem from "./Comments-item"
 import './Comments-styles.scss'
+// Context
+import {CommentsContext} from "./Contexts/CommentsContext";
 
 const Comments = () => {
 
-    const [comments, setComments] = useState([])
+    const {comments, setComments} = useContext(CommentsContext)
 
     useEffect(() => {
         async function getComments(url) {
@@ -24,10 +26,12 @@ const Comments = () => {
             .then(() => console.log('request for comments sent'))
     }, [])
 
+    // let reverseArray = comments.map((value, index, array) => array[array.length - 1 - index])
+
     return (
         <section className="comments">
-            {comments.map(comment => {
-                if (comment.id < 7) {
+            {comments.map((comment, index) => {
+                if (index < 6) {
                     return <CommentsItem data={comment} key={uuid()}/>
                 } else {
                     return null

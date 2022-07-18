@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './styles/App.scss';
 import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
@@ -8,6 +8,8 @@ import Form from "./components/Form/Form";
 import Comments from "./components/Comments/Comments";
 import CommentForm from "./components/CommentForm/CommentForm";
 import Footer from "./components/Footer/Footer";
+// Contexts
+import {CommentsContext} from "./components/Comments/Contexts/CommentsContext";
 
 // async function postData() {
 //     await axios.post('https://jsonplaceholder.typicode.com/todos/', {
@@ -34,8 +36,15 @@ import Footer from "./components/Footer/Footer";
 // 13. Header.jsx cannot contain A in the UL, need to wrap A with LI
 // 14. Less gap between comments and upper form
 // 15. align items center on Footer
+// 16. Comment all code out
+// 17. Comment imports
+// 17. Refactor everything possible
+
+// push new comment to comment with .unshift()
 
 function App() {
+
+    const [comments, setComments] = useState([])
 
     return (
         <div className="App" onResize={() => console.log('resize')}>
@@ -45,9 +54,13 @@ function App() {
                 <Posts/>
                 <Bio/>
                 <Form/>
-                <Comments/>
-                <CommentForm/>
+                <CommentsContext.Provider value={{comments: comments, setComments: setComments}}>
+                    <Comments/>
+                    <CommentForm/>
+                </CommentsContext.Provider>
+
                 <Footer/>
+                <br/><br/><br/><br/><br/><br/><br/>
             </div>
         </div>
     );

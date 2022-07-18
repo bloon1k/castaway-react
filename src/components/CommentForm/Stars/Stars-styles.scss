@@ -1,0 +1,34 @@
+@use '../../../styles/colors';
+
+.comment-form {
+
+  &__star {
+    width: 35px !important;
+    height: 34px !important;
+    transition: .3s all;
+    padding: 0 5px;
+  }
+}
+
+// Adaptive media queries
+@media screen and (min-width: 1440px) {
+  .comment-form {
+
+  }
+}
+
+@media screen and (max-width: 1200px) {
+
+}
+
+@media screen and (max-width: 1024px) {
+
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 480px) {
+
+}
