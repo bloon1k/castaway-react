@@ -23,3 +23,9 @@
     gap: .7em;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .comments {
+    gap: 1%;
+  }
+}

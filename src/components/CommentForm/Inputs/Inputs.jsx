@@ -1,13 +1,13 @@
-import React, {useContext} from 'react';
+import React, {useContext} from 'react'
 // UI components
-import Button from "../../UI/Button/Button";
+import Button from "../../UI/Button/Button"
 // React hook form and yup validation
-import {useForm} from "react-hook-form";
-import {yupResolver} from "@hookform/resolvers/yup";
-import * as yup from "yup";
+import {useForm} from "react-hook-form"
+import {yupResolver} from "@hookform/resolvers/yup"
+import * as yup from "yup"
 // Context
-import {StarsContext} from "../Contexts/StarsContext";
-import {CommentsContext} from "../../Comments/Contexts/CommentsContext";
+import {StarsContext} from "../../../Helper/Contexts/StarsContext"
+import {CommentsContext} from "../../../Helper/Contexts/CommentsContext"
 // Styles
 import './Inputs-styles.scss'
 
@@ -25,6 +25,7 @@ const Inputs = () => {
         resolver: yupResolver(schema),
     })
 
+    // Generates and adds a comment with index 0 to comments array
     function onSubmit(data) {
         let newComment = {
             stars: document.getElementById('comment-form__num-inp').value,
@@ -86,7 +87,7 @@ const Inputs = () => {
                 text={'Submit'}
             />
         </form>
-    );
-};
+    )
+}
 
-export default Inputs;
+export default Inputs

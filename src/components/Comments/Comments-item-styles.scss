@@ -84,14 +84,15 @@
 
 @media screen and (max-width: 768px) {
   .comments-item {
-    width: 48%;
+    width: 49.5%;
+    margin-top: .5%;
+    margin-bottom: .5%;
     padding: 5% 3%;
   }
 }
 
 @media screen and (max-width: 480px) {
   .comments-item {
-    width: 45%;
 
     &__stars {
       gap: .20em;

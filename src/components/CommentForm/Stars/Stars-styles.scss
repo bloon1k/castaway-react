@@ -26,7 +26,13 @@
 }
 
 @media screen and (max-width: 768px) {
+  .comment-form {
 
+    &__star {
+      width: 30px !important;
+      height: 29px !important;
+    }
+  }
 }
 
 @media screen and (max-width: 480px) {

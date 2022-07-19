@@ -1,13 +1,16 @@
 import React, {useContext} from 'react'
-import {clickHandler, hoverHandler} from './EventHandlers'
-import grayStar from "../../../Assets/star-gray.svg"
-import {v4 as uuid} from 'uuid'
-import {StarsContext} from '../Contexts/StarsContext'
 // Styles
 import './Stars-styles.scss'
+// Libraries
+import {clickHandler, hoverHandler} from './EventHandlers'
+import {v4 as uuid} from 'uuid'
+// Assets
+import grayStar from "../../../Assets/star-gray.svg"
+// Context
+import {StarsContext} from '../../../Helper/Contexts/StarsContext'
 
 const Stars = () => {
-    
+
     const {stars} = useContext(StarsContext)
 
     return (
@@ -26,7 +29,7 @@ const Stars = () => {
                 )
             })}
         </div>
-    );
-};
+    )
+}
 
-export default Stars;
+export default Stars

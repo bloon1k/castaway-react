@@ -1,7 +1,10 @@
 import React from 'react'
+// Styles
 import './Comments-item-styles.scss'
+// Assets
 import star from '../../Assets/star.svg'
 import starGray from '../../Assets/star-gray.svg'
+// Libraries
 import {v4 as uuid} from 'uuid'
 
 const CommentsItem = ({data}) => {
@@ -41,7 +44,7 @@ const CommentsItem = ({data}) => {
                 {data.email}
             </div>
         </div>
-    );
-};
+    )
+}
 
-export default CommentsItem;
+export default CommentsItem

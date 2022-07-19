@@ -1,10 +1,12 @@
-import React from 'react';
-import './Hero-styles.scss';
-import spotify from '../../Assets/spotify.svg';
-import circle from '../../Assets/circle.svg';
-import soundcloud from '../../Assets/soundcloud.svg';
-import podcasts from '../../Assets/podcasts.svg';
-import radio from '../../Assets/radio.svg';
+import React from 'react'
+// Styles
+import './Hero-styles.scss'
+// Assets
+import spotify from '../../Assets/spotify.svg'
+import circle from '../../Assets/circle.svg'
+import soundcloud from '../../Assets/soundcloud.svg'
+import podcasts from '../../Assets/podcasts.svg'
+import radio from '../../Assets/radio.svg'
 import sparks from '../../Assets/sparks.svg'
 import underline from '../../Assets/underline.svg'
 
@@ -52,7 +54,7 @@ const Hero = () => {
                 </div>
             </div>
         </section>
-    );
-};
+    )
+}
 
-export default Hero;
+export default Hero

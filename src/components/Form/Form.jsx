@@ -1,9 +1,14 @@
 import React from 'react'
+// Styles
 import './Form-styles.scss'
-import Button from "../UI/Button/Button";
-import {useForm} from 'react-hook-form';
+// UI components
+import Button from "../UI/Button/Button"
+// Libraries
+import axios from 'axios'
+import {useForm} from 'react-hook-form'
 import * as yup from 'yup'
-import {yupResolver} from "@hookform/resolvers/yup";
+import {yupResolver} from "@hookform/resolvers/yup"
+// Assets
 import sparks from '../../Assets/sparks2.svg'
 
 const schema = yup.object().shape({
@@ -18,14 +23,41 @@ const Form = () => {
         resolver: yupResolver(schema)
     })
 
+    async function postData(data) {
+        await axios.post('https://jsonplaceholder.typicode.com/todos/', {
+            name: data.name,
+            email: data.email,
+        })
+            // need to activate popup on .then instead of console.log
+            .then(response => console.log(response))
+            .catch(error => console.log(error))
+    }
 
     const submitForm = (data) => {
         console.log(data)
+        postData(data)
+            .then(() => {
+                document.getElementsByClassName('form__popup')[0].style.display = 'flex'
+                setTimeout(() => {
+                    document.getElementsByClassName('form__popup')[0].classList.add('move')
+                }, 500)
+                setTimeout(() => {
+                    document.getElementsByClassName('form__popup')[0].classList.remove('move')
+                }, 4000)
+                setTimeout(() => {
+                    document.getElementsByClassName('form__popup')[0].style.display = 'none'
+                }, 5000)
+            })
+            .catch(error => console.log(error.message))
         reset()
     }
 
     return (
         <section className="form">
+
+            <div className="form__popup">
+                Subscription activated successfully!
+            </div>
 
             <div className="form__container">
                 <div className="form__title-wrapper">
@@ -66,7 +98,7 @@ const Form = () => {
 
             </div>
         </section>
-    );
-};
+    )
+}
 
-export default Form;
+export default Form

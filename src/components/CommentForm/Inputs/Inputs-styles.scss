@@ -65,8 +65,17 @@
 
 @media screen and (max-width: 1024px) {
   .comment-form {
+
     &__submit {
       font-size: 90%;
+    }
+
+    &__error, &__error2 {
+      font-size: 70%;
+    }
+
+    &__comment, &__email, &__submit {
+      height: 42px;
     }
   }
 }

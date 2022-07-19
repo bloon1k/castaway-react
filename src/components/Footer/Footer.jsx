@@ -1,5 +1,7 @@
 import React from 'react'
+// Styles
 import './Footer-styles.scss'
+// Assets
 import logo from '../../Assets/logo.svg'
 import instagram from '../../Assets/instagram.svg'
 import twitter from '../../Assets/twitter.svg'
@@ -48,7 +50,7 @@ const Footer = () => {
             </ul>
 
         </section>
-    );
-};
+    )
+}
 
-export default Footer;
+export default Footer
