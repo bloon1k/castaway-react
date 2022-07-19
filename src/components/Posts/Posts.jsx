@@ -7,10 +7,10 @@ import {v4 as uuid} from 'uuid'
 // Children components
 import PostItem from './Post-item'
 // UI components
-import Button from "../UI/Button/Button";
+import Button from "../UI/Button/Button"
 
 const Posts = () => {
-    
+
     const [posts, setPosts] = useState([])
 
     useEffect(() => {
@@ -36,12 +36,12 @@ const Posts = () => {
                     if (post.id < 4) {
                         return <PostItem props={post} key={uuid()}/>
                     } else {
-                        return null;
+                        return null
                     }
                 })}
             </div>
         </section>
-    );
-};
+    )
+}
 
-export default Posts;
+export default Posts

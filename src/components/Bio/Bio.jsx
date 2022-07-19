@@ -1,13 +1,15 @@
 import React from 'react'
+// Styles
 import './Bio-styles.scss'
-import Button from "../UI/Button/Button";
+// UI components
+import Button from "../UI/Button/Button"
 
 const Bio = () => {
     return (
         <section className={'bio'}>
             <div className="bio__content">
                 <Button props={{className: 'bio__button'}} text={
-                    // 'text' = Children of the button
+                    // 'text' prop = Children of the button
                     <>
                         <div className="bio__placeholder">
                             {/*  Placeholder  */}
@@ -34,7 +36,7 @@ const Bio = () => {
                 <img src={require('../../Assets/jacob.png')} alt="Jacob" className={'bio__image'}/>
             </div>
         </section>
-    );
-};
+    )
+}
 
-export default Bio;
+export default Bio

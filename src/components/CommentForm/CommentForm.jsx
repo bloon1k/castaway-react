@@ -2,10 +2,10 @@ import React, {useState} from 'react'
 // Styles
 import './CommentForm-styles.scss'
 // Child components
-import Stars from "./Stars/Stars";
-import Inputs from "./Inputs/Inputs";
+import Stars from "./Stars/Stars"
+import Inputs from "./Inputs/Inputs"
 // Context
-import {StarsContext} from "./Contexts/StarsContext";
+import {StarsContext} from "../../Helper/Contexts/StarsContext"
 
 const CommentForm = () => {
 
@@ -35,7 +35,7 @@ const CommentForm = () => {
             </div>
 
         </section>
-    );
-};
+    )
+}
 
-export default CommentForm;
+export default CommentForm

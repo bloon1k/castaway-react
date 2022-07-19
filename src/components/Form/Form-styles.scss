@@ -74,6 +74,40 @@
   }
 }
 
+// Success popup
+.form__popup {
+
+  width: 15vw;
+  height: 50px;
+  font-size: 1em;
+  text-align: center;
+  font-weight: 700;
+
+  background: colors.$primary;
+  color: mediumseagreen;
+  padding: 1%;
+  z-index: 2;
+
+  justify-content: center;
+  align-items: center;
+  transition: 1s all;
+
+  border: 2px solid white;
+  border-radius: .7em;
+
+  box-shadow: 0 0 5px gray;
+
+  display: none;
+  position: fixed;
+  top: 120%;
+  left: 80%;
+}
+
+.move {
+  top: 93% !important;
+  transition: 1s all;
+}
+
 .input {
   background: colors.$primary;
   border: 2px solid colors.$primary;
@@ -90,6 +124,18 @@
 @media screen and (min-width: 1440px) {
   .form {
     width: 1440px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .form {
+
+    &__popup {
+      width: 25vw;
+      height: 50px;
+      font-size: 1em;
+      left: 70%;
+    }
   }
 }
 
@@ -134,10 +180,17 @@
 @media screen and (max-width: 768px) {
   .form {
 
+    &__popup {
+      width: 40vw;
+      height: 50px;
+      font-size: 1em;
+      left: 55%;
+    }
+
     &__container {
       flex-direction: column;
       align-items: center;
-      gap: 4em;
+      gap: 3em;
       padding: 5%;
     }
 
@@ -154,7 +207,7 @@
 
     &__title {
       text-align: center;
-      font-size: 200%;
+      font-size: 220%;
 
       &-wrapper {
         width: 100%;
@@ -163,14 +216,15 @@
 
     &__inputs {
       width: 100%;
+      padding: 0;
     }
 
     #form__name, #form__email {
-      height: 50px;
+      height: 45px;
     }
 
     &__button {
-      height: 45px;
+      height: 40px;
       font-size: 90%;
     }
   }
@@ -179,10 +233,21 @@
 @media screen and (max-width: 480px) {
   .form {
 
+    &__popup {
+      width: 50vw;
+      height: 50px;
+      font-size: .8em;
+      left: 45%;
+    }
+
+    &__inputs {
+      gap: 1em;
+    }
+
     &__container {
       flex-direction: column;
       align-items: center;
-      gap: 4em;
+      gap: 2em;
     }
 
     &__sparks {
@@ -208,12 +273,12 @@
     }
 
     #form__name, #form__email {
-      height: 48px;
+      height: 40px;
     }
 
     &__button {
       width: 40%;
-      height: 40px;
+      height: 36px;
       font-size: 80%;
     }
   }

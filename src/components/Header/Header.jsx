@@ -1,6 +1,8 @@
-import React from 'react';
+import React from 'react'
+// Styles
 import './Header-styles.scss'
 import './Burger-menu-styles.scss'
+// Assets
 import logo from '../../Assets/logo.svg'
 
 const Header = () => {
@@ -41,18 +43,10 @@ const Header = () => {
             <img src={logo} alt="Castaway Logo" className={'head__logo'}/>
             <nav className="head__nav">
                 <ul className="head__ul">
-                    <a href={'#root'}>
-                        <li>Home</li>
-                    </a>
-                    <a href={'#root'}>
-                        <li>Episodes</li>
-                    </a>
-                    <a href={'#root'}>
-                        <li>About</li>
-                    </a>
-                    <a href={'#root'}>
-                        <li>Contact</li>
-                    </a>
+                    <li><a href={'#root'}>Home</a></li>
+                    <li><a href={'#root'}>Episodes</a></li>
+                    <li><a href={'#root'}>About</a></li>
+                    <li><a href={'#root'}>Content</a></li>
                 </ul>
             </nav>
             <img
@@ -62,7 +56,7 @@ const Header = () => {
                 onClick={clickHandler}
             />
         </section>
-    );
-};
+    )
+}
 
-export default Header;
+export default Header

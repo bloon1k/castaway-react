@@ -1,6 +1,7 @@
-import middleStar from "../../../Assets/middleStar.svg";
-import grayStar from "../../../Assets/star-gray.svg";
-import star from "../../../Assets/star.svg";
+// Assets
+import middleStar from "../../../Assets/middleStar.svg"
+import grayStar from "../../../Assets/star-gray.svg"
+import star from "../../../Assets/star.svg"
 
 export function hoverHandler(e) {
     // Defining stars for set rating for the new comment
@@ -25,7 +26,7 @@ export function hoverHandler(e) {
             star3.setAttribute('src', grayStar)
             star4.setAttribute('src', grayStar)
             star5.setAttribute('src', grayStar)
-            break;
+            break
         }
         case 'star2': {
             star1.setAttribute('src', middleStar)
@@ -33,7 +34,7 @@ export function hoverHandler(e) {
             star3.setAttribute('src', grayStar)
             star4.setAttribute('src', grayStar)
             star5.setAttribute('src', grayStar)
-            break;
+            break
         }
         case 'star3': {
             star1.setAttribute('src', middleStar)
@@ -41,7 +42,7 @@ export function hoverHandler(e) {
             star3.setAttribute('src', middleStar)
             star4.setAttribute('src', grayStar)
             star5.setAttribute('src', grayStar)
-            break;
+            break
         }
         case 'star4': {
             star1.setAttribute('src', middleStar)
@@ -49,7 +50,7 @@ export function hoverHandler(e) {
             star3.setAttribute('src', middleStar)
             star4.setAttribute('src', middleStar)
             star5.setAttribute('src', grayStar)
-            break;
+            break
         }
         case 'star5': {
             star1.setAttribute('src', middleStar)
@@ -57,7 +58,7 @@ export function hoverHandler(e) {
             star3.setAttribute('src', middleStar)
             star4.setAttribute('src', middleStar)
             star5.setAttribute('src', middleStar)
-            break;
+            break
         }
         default: {
             throw new Error('sum error')
@@ -105,7 +106,7 @@ export function clickHandler(e) {
             star4.setAttribute('src', grayStar)
             star5.setAttribute('src', grayStar)
             document.getElementsByClassName('comment-form__email')[0].focus()
-            break;
+            break
         }
         case 'star2': {
             document.getElementById('comment-form__num-inp').value = 2
@@ -115,7 +116,7 @@ export function clickHandler(e) {
             star4.setAttribute('src', grayStar)
             star5.setAttribute('src', grayStar)
             document.getElementsByClassName('comment-form__email')[0].focus()
-            break;
+            break
         }
         case 'star3': {
             document.getElementById('comment-form__num-inp').value = 3
@@ -125,7 +126,7 @@ export function clickHandler(e) {
             star4.setAttribute('src', grayStar)
             star5.setAttribute('src', grayStar)
             document.getElementsByClassName('comment-form__email')[0].focus()
-            break;
+            break
         }
         case 'star4': {
             document.getElementById('comment-form__num-inp').value = 4
@@ -135,7 +136,7 @@ export function clickHandler(e) {
             star4.setAttribute('src', star)
             star5.setAttribute('src', grayStar)
             document.getElementsByClassName('comment-form__email')[0].focus()
-            break;
+            break
         }
         case 'star5': {
             document.getElementById('comment-form__num-inp').value = 5
@@ -145,7 +146,7 @@ export function clickHandler(e) {
             star4.setAttribute('src', star)
             star5.setAttribute('src', star)
             document.getElementsByClassName('comment-form__email')[0].focus()
-            break;
+            break
         }
         default: {
             throw new Error('sum error')

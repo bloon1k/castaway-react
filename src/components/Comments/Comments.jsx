@@ -1,10 +1,13 @@
 import React, {useEffect, useContext} from 'react'
+// Styles
+import './Comments-styles.scss'
+// Libraries
 import axios from 'axios'
 import {v4 as uuid} from 'uuid'
+// Child components
 import CommentsItem from "./Comments-item"
-import './Comments-styles.scss'
 // Context
-import {CommentsContext} from "./Contexts/CommentsContext";
+import {CommentsContext} from "../../Helper/Contexts/CommentsContext"
 
 const Comments = () => {
 
@@ -15,7 +18,7 @@ const Comments = () => {
             await axios.get(url)
                 .then(response => setComments(response.data.map(comment => {
                     // Generating random number from 1 to 5
-                    let rating = Math.floor(Math.random() * 5) + 1;
+                    let rating = Math.floor(Math.random() * 5) + 1
                     // Adding amount of stars to the comment
                     return {...comment, stars: rating}
                 })))
@@ -38,7 +41,7 @@ const Comments = () => {
                 }
             })}
         </section>
-    );
-};
+    )
+}
 
-export default Comments;
+export default Comments

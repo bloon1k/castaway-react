@@ -1,6 +1,7 @@
 @use '../../styles/colors';
 
 .post-item {
+  //max-height: 300px;
   display: flex;
   gap: 2%;
   width: 100%;
@@ -53,7 +54,7 @@
   }
 
   &__body {
-    font-size: 100%;
+    font-size: 130%;
     opacity: 0.7;
     letter-spacing: .1em;
 
@@ -64,7 +65,7 @@
 
   &__button {
     width: 24%;
-    min-height: 12%;
+    height: 40px;
     font-weight: 400;
   }
 }
@@ -72,17 +73,12 @@
 // Adaptive media queries
 @media screen and (min-width: 1440px) {
   .post-item {
-    height: 450px;
+
   }
 }
 
 @media screen and (max-width: 1200px) {
   .post-item {
-    height: 400px;
-
-    &__content {
-
-    }
 
     &__number {
       font-size: 70%;
@@ -93,7 +89,7 @@
     }
 
     &__body {
-      font-size: 80%;
+      font-size: 100%;
     }
 
     &__button {
@@ -104,14 +100,9 @@
 
 @media screen and (max-width: 1024px) {
   .post-item {
-    height: 330px;
-
-    &__content {
-
-    }
 
     &__number {
-      display: none;
+      //display: none;
     }
 
     &__title {
@@ -123,47 +114,40 @@
     }
 
     &__button {
-      font-size: 80% !important;
-      height: 12%;
+      font-size: 70% !important;
+      width: 27%;
+      height: 30px;
     }
   }
 }
 
 @media screen and (max-width: 768px) {
   .post-item {
-    position: relative;
-    height: 400px;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
 
     &:hover {
       transform: scale(1);
-
-      & .post-item__image {
-        opacity: 0.1;
-      }
     }
 
     &__image {
-      opacity: 0.1;
-      z-index: 0;
+      display: none;
     }
 
     &__image-wrapper {
-      position: absolute;
-      top: 5%;
-      left: 4%;
       width: 50%;
       height: 90%;
     }
 
     &__content {
-      z-index: 1;
-      width: 90%;
-      padding: 5% 0;
+      width: 100%;
+      padding: 5%;
+      //justify-content: space-between;
     }
 
     &__number {
-      font-size: 60%;
+      font-size: 80%;
     }
 
     &__title {
@@ -175,38 +159,22 @@
     }
 
     &__button {
-      font-size: 80% !important;
-      width: 36%;
-      height: 12%;
+      font-size: 75% !important;
+      width: 34%;
+      height: 35px;
     }
   }
 }
 
 @media screen and (max-width: 480px) {
   .post-item {
-    position: relative;
-    height: 300px;
-
-    &__image-wrapper {
-      position: absolute;
-      top: 5%;
-      left: 4%;
-      width: 50%;
-      height: 90%;
-    }
-
-    &__content {
-      z-index: 1;
-      width: 90%;
-      padding: 5% 0;
-    }
 
     &__number {
-      font-size: 60%;
+      font-size: 70%;
     }
 
     &__title {
-      font-size: 130%;
+      font-size: 150%;
     }
 
     &__body {
@@ -216,7 +184,6 @@
     &__button {
       font-size: 60% !important;
       width: 42%;
-      height: 12%;
     }
   }
 }
