@@ -21,26 +21,26 @@ import {CommentsContext} from "./components/Comments/Contexts/CommentsContext";
 //         .catch(error => console.log(error))
 // }
 
+
+// Easy
+// Comment form padding
+// 1. Padding on post item top bottom needs help
+// 8. Edit readme.md
+// 10. Comments seem too thick on the phone;
+// 99. PLEASE ADAPT COMMENT FORM
+
+// Medium
 // 1. Fix form adaptive
 // 2. Form submit action
+// 19. Remember comments to localstorage
+
+// Hard
 // 3. Check all adaptive
 // 4. Suggest post form popup create
-// 5. View post details popup create
-// 6. Burger and regular menu pages create
-// 7. Do something about 1440+ header appearance
-// 8. Edit readme.md
-// 9. Form padding top-bottom so small on phone. Title as well
-// 10. Comments seem too thick on the phone;
-// 11. Burger looks not good, need to steal it somewhere
-// 12. Remove posts hover effect on 768 -.
-// 13. Header.jsx cannot contain A in the UL, need to wrap A with LI
-// 14. Less gap between comments and upper form
-// 15. align items center on Footer
 // 16. Comment all code out
 // 17. Comment imports
-// 17. Refactor everything possible
-
-// push new comment to comment with .unshift()
+// 18. Refactor everything possible
+// 11. Animate mobile burger
 
 function App() {
 
@@ -58,9 +58,7 @@ function App() {
                     <Comments/>
                     <CommentForm/>
                 </CommentsContext.Provider>
-
                 <Footer/>
-                <br/><br/><br/><br/><br/><br/><br/>
             </div>
         </div>
     );

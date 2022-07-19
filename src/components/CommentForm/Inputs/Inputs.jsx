@@ -27,7 +27,7 @@ const Inputs = () => {
 
     function onSubmit(data) {
         let newComment = {
-            stars: document.getElementById('num-inp').value,
+            stars: document.getElementById('comment-form__num-inp').value,
             body: data.comment,
             email: data.email,
         }
@@ -44,7 +44,7 @@ const Inputs = () => {
             {/*Hidden input, whose value corresponds with chosen amount of stars, added to gather form data*/}
             <input
                 type="number"
-                id={'num-inp'}
+                id={'comment-form__num-inp'}
                 defaultValue={0}
                 style={{opacity: '0', position: "absolute", left: '-100%'}}
             />

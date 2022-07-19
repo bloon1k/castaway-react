@@ -98,7 +98,7 @@ export function clickHandler(e) {
 
     switch (id) {
         case 'star1': {
-            document.getElementById('num-inp').value = 1
+            document.getElementById('comment-form__num-inp').value = 1
             star1.setAttribute('src', star)
             star2.setAttribute('src', grayStar)
             star3.setAttribute('src', grayStar)
@@ -108,7 +108,7 @@ export function clickHandler(e) {
             break;
         }
         case 'star2': {
-            document.getElementById('num-inp').value = 2
+            document.getElementById('comment-form__num-inp').value = 2
             star1.setAttribute('src', star)
             star2.setAttribute('src', star)
             star3.setAttribute('src', grayStar)
@@ -118,7 +118,7 @@ export function clickHandler(e) {
             break;
         }
         case 'star3': {
-            document.getElementById('num-inp').value = 3
+            document.getElementById('comment-form__num-inp').value = 3
             star1.setAttribute('src', star)
             star2.setAttribute('src', star)
             star3.setAttribute('src', star)
@@ -128,7 +128,7 @@ export function clickHandler(e) {
             break;
         }
         case 'star4': {
-            document.getElementById('num-inp').value = 4
+            document.getElementById('comment-form__num-inp').value = 4
             star1.setAttribute('src', star)
             star2.setAttribute('src', star)
             star3.setAttribute('src', star)
@@ -138,7 +138,7 @@ export function clickHandler(e) {
             break;
         }
         case 'star5': {
-            document.getElementById('num-inp').value = 5
+            document.getElementById('comment-form__num-inp').value = 5
             star1.setAttribute('src', star)
             star2.setAttribute('src', star)
             star3.setAttribute('src', star)

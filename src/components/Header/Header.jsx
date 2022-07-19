@@ -31,18 +31,10 @@ const Header = () => {
                         {/*  Placeholder  */}
                     </div>
                     <ul className="head__menu-ul">
-                        <a href={'#root'}>
-                            <li>Home</li>
-                        </a>
-                        <a href={'#root'}>
-                            <li>Episodes</li>
-                        </a>
-                        <a href={'#root'}>
-                            <li>About</li>
-                        </a>
-                        <a href={'#root'}>
-                            <li>Contact</li>
-                        </a>
+                        <li><a href={'#root'}>Home</a></li>
+                        <li><a href={'#root'}>Episodes</a></li>
+                        <li><a href={'#root'}>About</a></li>
+                        <li><a href={'#root'}>Content</a></li>
                     </ul>
                 </div>
             </div>
