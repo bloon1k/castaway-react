@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/castaway-react/static/css/main.678ed9a4.css",
-    "main.js": "/castaway-react/static/js/main.3d08732d.js",
+    "main.css": "/castaway-react/static/css/main.5192de00.css",
+    "main.js": "/castaway-react/static/js/main.95e11bcf.js",
     "static/media/bg.png": "/castaway-react/static/media/bg.89f44bdf6ad61286c580.png",
     "static/media/jacob.png": "/castaway-react/static/media/jacob.58ec1dbb2a31cb99ec9b.png",
     "static/media/person.png": "/castaway-react/static/media/person.d4f0df6cab0fe77b6f1d.png",
@@ -25,11 +25,11 @@
     "static/media/star-gray.svg": "/castaway-react/static/media/star-gray.9489aee3cec24a4d76616809f4d056e1.svg",
     "static/media/star.svg": "/castaway-react/static/media/star.cd69ce716924f47d955c88d3d0d4083f.svg",
     "static/media/facebook.svg": "/castaway-react/static/media/facebook.5af5659b1d481d1457d7c877e70e7198.svg",
-    "main.678ed9a4.css.map": "/castaway-react/static/css/main.678ed9a4.css.map",
-    "main.3d08732d.js.map": "/castaway-react/static/js/main.3d08732d.js.map"
+    "main.5192de00.css.map": "/castaway-react/static/css/main.5192de00.css.map",
+    "main.95e11bcf.js.map": "/castaway-react/static/js/main.95e11bcf.js.map"
   },
   "entrypoints": [
-    "static/css/main.678ed9a4.css",
-    "static/js/main.3d08732d.js"
+    "static/css/main.5192de00.css",
+    "static/js/main.95e11bcf.js"
   ]
 }
