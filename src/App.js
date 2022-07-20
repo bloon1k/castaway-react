@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React from 'react'
 // Styles
 import './styles/App.scss'
 // Components
@@ -7,18 +7,10 @@ import Hero from "./components/Hero/Hero"
 import Posts from "./components/Posts/Posts"
 import Bio from "./components/Bio/Bio"
 import Form from "./components/Form/Form"
-import Comments from "./components/Comments/Comments"
-import CommentForm from "./components/CommentForm/CommentForm"
+import CommentsGeneral from "./components/CommentsGeneral/CommentsGeneral"
 import Footer from "./components/Footer/Footer"
-// Contexts
-import {CommentsContext} from "./Helper/Contexts/CommentsContext"
-
-// 4. Refactor everything possible
-// 5. Check all adaptive
 
 function App() {
-
-    const [comments, setComments] = useState([])
 
     return (
         <div className="App" onResize={() => console.log('resize')}>
@@ -28,10 +20,7 @@ function App() {
                 <Posts/>
                 <Bio/>
                 <Form/>
-                <CommentsContext.Provider value={{comments: comments, setComments: setComments}}>
-                    <Comments/>
-                    <CommentForm/>
-                </CommentsContext.Provider>
+                <CommentsGeneral/>
                 <Footer/>
             </div>
         </div>

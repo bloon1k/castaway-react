@@ -105,7 +105,6 @@ export function clickHandler(e) {
             star3.setAttribute('src', grayStar)
             star4.setAttribute('src', grayStar)
             star5.setAttribute('src', grayStar)
-            document.getElementsByClassName('comment-form__email')[0].focus()
             break
         }
         case 'star2': {
@@ -115,7 +114,6 @@ export function clickHandler(e) {
             star3.setAttribute('src', grayStar)
             star4.setAttribute('src', grayStar)
             star5.setAttribute('src', grayStar)
-            document.getElementsByClassName('comment-form__email')[0].focus()
             break
         }
         case 'star3': {
@@ -125,7 +123,6 @@ export function clickHandler(e) {
             star3.setAttribute('src', star)
             star4.setAttribute('src', grayStar)
             star5.setAttribute('src', grayStar)
-            document.getElementsByClassName('comment-form__email')[0].focus()
             break
         }
         case 'star4': {
@@ -135,7 +132,6 @@ export function clickHandler(e) {
             star3.setAttribute('src', star)
             star4.setAttribute('src', star)
             star5.setAttribute('src', grayStar)
-            document.getElementsByClassName('comment-form__email')[0].focus()
             break
         }
         case 'star5': {
@@ -145,7 +141,6 @@ export function clickHandler(e) {
             star3.setAttribute('src', star)
             star4.setAttribute('src', star)
             star5.setAttribute('src', star)
-            document.getElementsByClassName('comment-form__email')[0].focus()
             break
         }
         default: {
