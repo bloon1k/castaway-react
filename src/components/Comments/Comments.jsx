@@ -1,13 +1,13 @@
-import React, {useEffect, useContext} from 'react'
+import React, {useContext, useEffect} from 'react'
 // Styles
 import './Comments-styles.scss'
 // Libraries
 import axios from 'axios'
 import {v4 as uuid} from 'uuid'
 // Child components
-import CommentsItem from "./Comments-item"
+import CommentsItem from './Comments-item'
 // Context
-import {CommentsContext} from "../../Helper/Contexts/CommentsContext"
+import {CommentsContext} from '../../Helper/Contexts/CommentsContext'
 
 const Comments = () => {
 
@@ -27,6 +27,7 @@ const Comments = () => {
 
         getComments('https://jsonplaceholder.typicode.com/comments')
             .then(() => console.log('request for comments sent'))
+        // eslint-disable-next-line
     }, [])
 
     // let reverseArray = comments.map((value, index, array) => array[array.length - 1 - index])

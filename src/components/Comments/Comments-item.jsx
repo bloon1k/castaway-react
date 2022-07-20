@@ -24,7 +24,7 @@ const CommentsItem = ({data}) => {
     if ([...data.body].length > 100) {
         let newBody = [...data.body]
         newBody.length = 100
-        data.body = newBody.join("")
+        data.body = newBody.join('')
     }
 
     return (

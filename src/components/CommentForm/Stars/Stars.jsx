@@ -5,7 +5,7 @@ import './Stars-styles.scss'
 import {clickHandler, hoverHandler} from './EventHandlers'
 import {v4 as uuid} from 'uuid'
 // Assets
-import grayStar from "../../../Assets/star-gray.svg"
+import grayStar from '../../../Assets/star-gray.svg'
 // Context
 import {StarsContext} from '../../../Helper/Contexts/StarsContext'
 

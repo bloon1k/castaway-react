@@ -2,7 +2,7 @@ import React from 'react'
 // Styles
 import './Post-item-styles.scss'
 // UI components
-import Button from "../UI/Button/Button"
+import Button from '../UI/Button/Button'
 
 const PostItem = ({props}) => {
 
@@ -10,14 +10,14 @@ const PostItem = ({props}) => {
     if ([...props.title].length > 34) {
         let newTitle = [...props.title]
         newTitle.length = 34
-        props.title = newTitle.join("")
+        props.title = newTitle.join('')
     }
 
     // Shorten the post body received from API to 150 chars
     if ([...props.body].length > 150) {
         let newBody = [...props.body]
         newBody.length = 150
-        props.body = newBody.join("")
+        props.body = newBody.join('')
     }
 
     return (

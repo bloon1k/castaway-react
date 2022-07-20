@@ -2,7 +2,7 @@ import React from 'react'
 // Styles
 import './Bio-styles.scss'
 // UI components
-import Button from "../UI/Button/Button"
+import Button from '../UI/Button/Button'
 
 const Bio = () => {
     return (

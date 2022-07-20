@@ -2,15 +2,15 @@ import React, {useEffect, useState} from 'react'
 // Styles
 import './Posts-styles.scss'
 // Libraries
-import axios from "axios"
+import axios from 'axios'
 import {v4 as uuid} from 'uuid'
-import {useForm} from "react-hook-form"
-import {yupResolver} from "@hookform/resolvers/yup"
+import {useForm} from 'react-hook-form'
+import {yupResolver} from '@hookform/resolvers/yup'
 import * as yup from 'yup'
 // Children components
 import PostItem from './Post-item'
 // UI components
-import Button from "../UI/Button/Button"
+import Button from '../UI/Button/Button'
 
 const schema = yup.object().shape({
     title: yup.string().min(10).max(34).required(),

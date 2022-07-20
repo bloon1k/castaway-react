@@ -2,12 +2,12 @@ import React from 'react'
 // Styles
 import './Form-styles.scss'
 // UI components
-import Button from "../UI/Button/Button"
+import Button from '../UI/Button/Button'
 // Libraries
 import axios from 'axios'
 import {useForm} from 'react-hook-form'
 import * as yup from 'yup'
-import {yupResolver} from "@hookform/resolvers/yup"
+import {yupResolver} from '@hookform/resolvers/yup'
 // Assets
 import sparks from '../../Assets/sparks2.svg'
 
