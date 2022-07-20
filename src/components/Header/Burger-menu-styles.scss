@@ -5,7 +5,7 @@
   display: none;
   flex-direction: column;
   gap: 20px;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
@@ -24,13 +24,21 @@
     display: flex;
     width: 100%;
     justify-content: space-between;
+    background: red;
+    position: relative;
   }
 
   &-ul {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    font-size: 100%;
+    font-size: 80%;
+    //background: green;
+    position: absolute;
+    top: 15%;
+    left: 130%;
+
+    transition: .6s all;
 
     & a {
       color: colors.$white;

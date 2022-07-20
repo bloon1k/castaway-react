@@ -56,7 +56,7 @@ const Form = () => {
         <section className="form">
 
             <div className="form__popup">
-                Subscription activated successfully!
+                Success!
             </div>
 
             <div className="form__container">

@@ -24,9 +24,7 @@
 
 ### Stack:
 
-- HTML
-- SASS/SCSS
-- React
+- HTML - SCSS - React
 
 ### Additional Libraries:
 

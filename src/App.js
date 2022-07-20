@@ -13,13 +13,6 @@ import Footer from "./components/Footer/Footer"
 // Contexts
 import {CommentsContext} from "./Helper/Contexts/CommentsContext"
 
-// Medium
-// 1. Remember comments to localstorage - new
-
-// Hard
-// 2. Suggest post form popup create - new
-// 3. Animate mobile burger - new
-
 // Once ready
 // 4. Refactor everything possible
 // 5. Check all adaptive
