@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 // Styles
 import './Header-styles.scss'
 import './Burger-menu-styles.scss'
@@ -7,11 +7,21 @@ import logo from '../../Assets/logo.svg'
 
 const Header = () => {
 
+    const [move, setMove] = useState(false)
+
     function clickHandler() {
         const menu = document.getElementsByClassName('head__menu')[0]
         const burger = document.getElementsByClassName('head__burger')[0]
+        const ul = document.getElementsByClassName('head__menu-ul')[0]
         menu.style.display === 'flex' ? burger.style.opacity = 1 : burger.style.opacity = 0
         menu.style.display === 'flex' ? menu.style.display = 'none' : menu.style.display = 'flex'
+        if (!move) {
+            setTimeout(() => ul.style.left = '70%', 1)
+            setMove(prevState => !prevState)
+        } else {
+            ul.style.left = '130%'
+            setMove(prevState => !prevState)
+        }
     }
 
     return (
@@ -25,7 +35,10 @@ const Header = () => {
                         src={require('../../Assets/cross.png')}
                         alt="cross"
                         className={'head__menu-close'}
-                        onClick={clickHandler}
+                        onClick={() => {
+                            clickHandler()
+                            document.body.classList.remove('stop-scrolling')
+                        }}
                     />
                 </div>
                 <div className="head__menu-wrapper2">
@@ -53,7 +66,10 @@ const Header = () => {
                 src={require('../../Assets/burger.png')}
                 alt="burger"
                 className={'head__burger'}
-                onClick={clickHandler}
+                onClick={() => {
+                    clickHandler()
+                    document.body.classList.add('stop-scrolling')
+                }}
             />
         </section>
     )
