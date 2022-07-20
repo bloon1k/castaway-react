@@ -1,13 +1,13 @@
 import React, {useContext} from 'react'
 // UI components
-import Button from "../../UI/Button/Button"
+import Button from '../../UI/Button/Button'
 // React hook form and yup validation
-import {useForm} from "react-hook-form"
-import {yupResolver} from "@hookform/resolvers/yup"
-import * as yup from "yup"
+import {useForm} from 'react-hook-form'
+import {yupResolver} from '@hookform/resolvers/yup'
+import * as yup from 'yup'
 // Context
-import {StarsContext} from "../../../Helper/Contexts/StarsContext"
-import {CommentsContext} from "../../../Helper/Contexts/CommentsContext"
+import {StarsContext} from '../../../Helper/Contexts/StarsContext'
+import {CommentsContext} from '../../../Helper/Contexts/CommentsContext'
 // Styles
 import './Inputs-styles.scss'
 
@@ -47,7 +47,7 @@ const Inputs = () => {
                 type="number"
                 id={'comment-form__num-inp'}
                 defaultValue={0}
-                style={{opacity: '0', position: "absolute", left: '-100%'}}
+                style={{opacity: '0', position: 'absolute', left: '-100%'}}
             />
             <p className={'comment-form__error2'}>Please rate 1-5 stars</p>
 

@@ -1,9 +1,9 @@
 import React, {useState} from 'react'
 // Child components
-import Comments from "../Comments/Comments"
-import CommentForm from "../CommentForm/CommentForm"
+import Comments from '../Comments/Comments'
+import CommentForm from '../CommentForm/CommentForm'
 // Contexts
-import {CommentsContext} from "../../Helper/Contexts/CommentsContext"
+import {CommentsContext} from '../../Helper/Contexts/CommentsContext'
 
 
 const CommentsGeneral = () => {

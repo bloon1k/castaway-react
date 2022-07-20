@@ -1,7 +1,7 @@
 // Assets
-import middleStar from "../../../Assets/middleStar.svg"
-import grayStar from "../../../Assets/star-gray.svg"
-import star from "../../../Assets/star.svg"
+import middleStar from '../../../Assets/middleStar.svg'
+import grayStar from '../../../Assets/star-gray.svg'
+import star from '../../../Assets/star.svg'
 
 export function hoverHandler(e) {
     // Defining stars for set rating for the new comment
