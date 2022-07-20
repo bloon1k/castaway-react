@@ -42,9 +42,6 @@ const Header = () => {
                     />
                 </div>
                 <div className="head__menu-wrapper2">
-                    <div className="head__placeholder">
-                        {/*  Placeholder  */}
-                    </div>
                     <ul className="head__menu-ul">
                         <li><a href={'#root'}>Home</a></li>
                         <li><a href={'#root'}>Episodes</a></li>
