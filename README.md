@@ -18,7 +18,6 @@
 - Suggest a post for the website
 - Add a comment to comments section
 - Subscribe for email newsletter
-- Use a burger menu on mobile
 
 > *What technologies did you use?*
 
@@ -28,7 +27,4 @@
 
 ### Additional Libraries:
 
-- Axios
-- UUID
-- React Hook Form
-- Yup
+- Axios - UUID - React Hook Form - Yup

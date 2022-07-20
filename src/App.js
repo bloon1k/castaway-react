@@ -13,7 +13,6 @@ import Footer from "./components/Footer/Footer"
 // Contexts
 import {CommentsContext} from "./Helper/Contexts/CommentsContext"
 
-// Once ready
 // 4. Refactor everything possible
 // 5. Check all adaptive
 
